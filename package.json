@@ -1,0 +1,31 @@
+{
+  "name": "codeclimatetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest .",
+    "dev": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armonkahil/codeclimatetest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/armonkahil/codeclimatetest/issues"
+  },
+  "homepage": "https://github.com/armonkahil/codeclimatetest#readme",
+  "dependencies": {
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7",
+    "tsc": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.1",
+    "typescript": "^4.4.4"
+  }
+}
