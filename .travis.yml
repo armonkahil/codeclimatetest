@@ -22,6 +22,8 @@ script:
   - npm run test 
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+  - ./cc-test-reporter format-build -t lcov ./coverage/lcov.info
+  - ./cc-test-reporter upload-coverage
 
 notifications:
     email: false
