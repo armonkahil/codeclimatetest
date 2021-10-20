@@ -17,7 +17,7 @@ before_install:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 install:
-  npm install
+  - npm install -q --no-color --no-progress
 script:
   - npm run test 
 after_script:
