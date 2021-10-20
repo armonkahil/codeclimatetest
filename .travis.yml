@@ -1,19 +1,23 @@
+language: node_js
+node_js:
+  - lts/*
+
 env:
   global:
     - CC_TEST_REPORTER_ID=e5e8487af1e35e3380b4ed4ceeb92d21eb0cec91045d305e8d4c3d4c87ce15df
 
-language: node_js
 
 cache:
+  npm: true
   directories:
    - node_modules
   
-services: postgresql
 before_install:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
-
+install:
+  npm install
 script:
   - npm run test 
 after_script:
